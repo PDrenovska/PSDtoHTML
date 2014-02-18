@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------------------------------
+CSS Styles for <PROJECT NAME>.
+
+version:   1.0
+--------------------------------------------------------------------------------------------------*/
+
+/* =CSS Reset
+--------------------------------------------------------------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+a {color: inherit;text-decoration: none;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html,body {width: 100%;}
+*:active, *:focus {outline: none;}
+/* End CSS Reset
+--------------------------------------------------------------------------------------------------*/
+
+/* =Toolkit
+--------------------------------------------------------------------------------------------------*/
+
+/* Micro Clearfix Hack by Nicholas Gallagher (http://nicolasgallagher.com/micro-clearfix-hack/) */
+/* For modern browsers */ 
+.cf:before, .cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+/* For IE 6/7 (trigger hasLayout) */
+.cf { zoom:1; }
+
+/* general purpose classes */
+.alignleft {float: left;}
+.alignright {float: right;}
+.bb1 {border-bottom: 1px solid #cfcfcf;margin-bottom: 7px;}
+.strong {font-weight: 700;}
+/* End Toolkit
+--------------------------------------------------------------------------------------------------*/
+
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* =Typography
+--------------------------------------------------------------------------------------------------*/
+
+/* Setting up the fonts */
+body { font-family: 'Lobster';position: relative;color: #000;font-size: 14px;font-weight: 400;}
+h1 {font-size: 26px;color: #ed1d38;text-align: center;margin-top: 25px;letter-spacing: -.3px;}
+
+/* End Typography
+--------------------------------------------------------------------------------------------------*/
+
+/* =Wrappers
+--------------------------------------------------------------------------------------------------*/
+.row {width: 1045px;margin: 0 auto;}
+/* End Wrappers
+--------------------------------------------------------------------------------------------------*/
+
+/* =Header
+--------------------------------------------------------------------------------------------------*/
+.header {height: 722px;background: url('../img/pattern.jpg') 0 0 repeat-x;}
+.brand {float: left;display: block;margin-left: 64px;margin-top: 18px;}
+/* End Header
+--------------------------------------------------------------------------------------------------*/
+
+/* =User Navigation
+--------------------------------------------------------------------------------------------------*/
+.nav li {float: left;}
+.nav.top {float: right;margin-right: 38px;margin-top: 76px;}
+.nav.top li {margin-left: 11px;}
+.nav.top a {color: #94674e;font-size: 26px;text-shadow: 2px 2px 1px rgba(0,0,0,.35);padding: 0 8px 2px 8px;}
+.nav.top a:hover {background: #fcc;box-shadow: 0 0 8px rgba(0,0,0,.3);color: #e20711;}
+
+.user-menu {margin-right: 50px;}
+	.user-menu li {float: left;margin-left: 20px;height: 38px;padding: 6px 0;}
+		.user-menu a {display: block;padding-left: 30px;height: 25px;line-height: 25px;font-family: Arial;color: #561e10;}
+		.check-link {background: url('../img/account.png') 0 center no-repeat;}
+		.shop-link {background: url('../img/basket.png') 0 0 no-repeat;}
+/* End User Navigation
+--------------------------------------------------------------------------------------------------*/
+
+/* =Slider
+--------------------------------------------------------------------------------------------------*/
+.slider {width: 1045px;background: url('../img/slider-back.png') center 0 no-repeat;margin: 0 auto;padding: 17px 47px 28px 49px;position: relative;}
+	.red-ribbon {position: absolute;right: 28px;top: 0;background: url('../img/red-med-ribbon.png');width: 161px;height: 162px;}
+.slides figure {position: relative;}
+	.slides figcaption {position: absolute;background: rgba(231,222,192,.65);top: 47px;left: 30px;width: 438px;padding: 16px;}
+	.slides h2 {font-size: 43px;color: #c9030c;margin-bottom: 22px;}
+	.slides p {font-family: Arial;font-size: 18px;color: #464545;line-height: 23px;}
+	.shop-btn {display: block;background: #96634f;font-family: Arial;font-size: 18px;color: #fff;padding: 8px 11px;border-radius: 4px;margin-top: 30px;box-shadow: 0 -13px 10px #783d27 inset, 0 0 3px #000;}
+
+.flex-direction-nav a {width: 36px;height: 67px;display: block;opacity: 1;top: 300px;}
+.flex-direction-nav .flex-prev {background: url('../img/prev.png');left: -23px;}
+.flex-direction-nav .flex-next {background: url('../img/next.png');right: -23px;}
+/* End Slider
+--------------------------------------------------------------------------------------------------*/
+
+/* =Box Content
+--------------------------------------------------------------------------------------------------*/
+.main {
+	background: -webkit-linear-gradient(#7f4731, #5e3525); /* For Safari */
+	background: -o-linear-gradient(#7f4731, #5e3525); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#7f4731, #5e3525); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#7f4731, #5e3525); /* Standard syntax */
+	box-shadow: 0 3px 10px rgba(0,0,0,.3) inset;
+	padding-top: 43px;
+	padding-bottom: 58px;
+}
+
+.box-list {width: 990px;margin: 0 auto;}
+.box-content {width: 330px;height: 264px;float: left;padding-top: 39px;position: relative;}
+	.cake-1 {background: url('../img/cake-1.png') 4px 0 no-repeat;}
+	.cake-2 {background: url('../img/cake-2.png') 4px 0 no-repeat;}
+	.cake-3 {background: url('../img/cake-3.png') 4px 0 no-repeat;}
+		.box-content h3{font-size: 26px;color: #f6dbac;margin-left: 52px;}
+		.box-content p {font-family: Arial;color: #643827;margin-left: 39px;margin-right: 35px;margin-top:29px;text-align: justify;line-height: 20px;}
+		.box-content p a {color: #cb0921;}
+	.read-more {font-size: 20px;color: #049b99;display: block;position: absolute;left: 40px;bottom: 32px;width: 330px;}
+/* End Box Content
+--------------------------------------------------------------------------------------------------*/
+
+/* =Footer
+--------------------------------------------------------------------------------------------------*/
+.footer {background: url('../img/pink-pattern.jpg') 0 0 repeat-x;height: 34px;padding-top: 5px;}
+.copy {display: block;height: 23px;line-height: 23px;margin-left: 54px;font-size: 16px;color: #4c2718;}
+.nav.bottom {margin-right: 39px;}
+	.nav.bottom li {margin-left: 18px;}
+		.nav.bottom a {color: #633827;font-size: 16px;line-height: 23px;display: block;height: 23px;}
+/* End Footer
+--------------------------------------------------------------------------------------------------*/

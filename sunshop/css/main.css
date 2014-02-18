@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------------------------------
+CSS Styles for <PROJECT NAME>.
+
+version:   1.0
+--------------------------------------------------------------------------------------------------*/
+
+/* =CSS Reset
+--------------------------------------------------------------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+a {color: inherit;text-decoration: none;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html,body {width: 100%;}
+*:active, *:focus {outline: none;}
+/* End CSS Reset
+--------------------------------------------------------------------------------------------------*/
+
+/* =Toolkit
+--------------------------------------------------------------------------------------------------*/
+
+/* Micro Clearfix Hack by Nicholas Gallagher (http://nicolasgallagher.com/micro-clearfix-hack/) */
+/* For modern browsers */ 
+.cf:before, .cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+/* For IE 6/7 (trigger hasLayout) */
+.cf { zoom:1; }
+
+/* general purpose classes */
+.alignleft {float: left;}
+.alignright {float: right;}
+.bb1 {border-bottom: 1px solid #cfcfcf;margin-bottom: 7px;}
+.strong {font-weight: 700;}
+.pt37 {padding-top: 37px;}
+.w85 {width: 85px;margin: 0 auto;}
+.col {width: 233px;}
+/* End Toolkit
+--------------------------------------------------------------------------------------------------*/
+
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* =Typography
+--------------------------------------------------------------------------------------------------*/
+
+/* Setting up the fonts */
+body { font-family: 'Open Sans', sans-serif; position: relative;background: #fff;color: #000;font-size: 14px;font-weight: 400;}
+
+/* End Typography
+--------------------------------------------------------------------------------------------------*/
+
+/* =Wrappers
+--------------------------------------------------------------------------------------------------*/
+.row {width: 1024px;margin: 0 auto;}
+/* End Wrappers
+--------------------------------------------------------------------------------------------------*/
+
+/* =Header
+--------------------------------------------------------------------------------------------------*/
+.top-menu {height: 43px;background: #4cb1ca;font-size: 13px;}
+	.locations-nav li {float: left;}
+		.locations-nav label {color: #bff2ff;}
+	.user-options-nav {float: right;color: #fff;padding-top: 17px;}
+		.user-options-nav li {float: left;border-right: 1px solid #fff;padding: 0 7px;}
+		.user-options-nav li:last-child {border: none;padding-right: 0;}
+			.user-options-nav a {display: block;height: 11px;line-height: 11px;padding: 0 8px;}
+			.user-options-nav li:last-child a {padding-right: 0;}
+.language-select {width: 90px;}
+.currency-select {width: 72px;}
+.chosen-container {margin-right: 15px;}
+
+.brand {font-size: 36px;color: #656565;text-transform: uppercase;font-weight: 700;margin: 35px 50px 36px 0;letter-spacing: -1px;}
+.main-navigation {color: #656565;text-transform: uppercase;font-weight: 700;margin-top: 47px;}
+	.main-navigation li {float: left;margin-right: 12px;}
+		.main-navigation a {display: block;padding: 0 6px;}
+.search-form {width: 174px;border: 1px solid #c6c6c6;display: block;height: 30px;margin-right: 14px;}
+	.search-form fieldset {display: block;height: 29px;}
+	.search-field {height: 28px;border: 0;margin: 0;padding: 0;padding-left: 10px;width: 140px;}
+	.search-btn {margin: 0;padding: 0;width: 29px;height: 28px;background: url('../img/magnifier.png') center center no-repeat;border: none;cursor: pointer;}
+.tag-btn {display: block;width: 35px;height: 35px;background: url('../img/tag.png') 0 0 no-repeat;margin-right: 4px;}
+.cart {background: url('../img/cart.png') 0 0 no-repeat;display: block;height: 35px;padding-left: 48px;text-transform: uppercase;font-weight: 700;color: #656565;line-height: 35px;margin-right: 4px;}
+/* End Header
+--------------------------------------------------------------------------------------------------*/
+
+/* =Slider
+--------------------------------------------------------------------------------------------------*/
+.slider {margin: 0 auto;position: relative;}
+.flexslider {width: 100%;}
+
+.slides figure {position: relative;}
+	.slides img {width: 100%;height: auto;}
+	.slides a {display: block;}
+	.slides figcaption {position: absolute;top: 50%;left: 16.38%;margin-top: -51px;}
+		.slide-title {font-weight: 300;text-transform: uppercase;color: #fff;font-size: 30px;background: rgba(0,0,0,.5);display: inline-block;padding: 10px 17px;margin-bottom: 3px;}
+		.slide-title.sub {font-weight: 700;font-size: 28px;}
+
+.flex-direction-nav a {width: 67px;height: 67px;display: block;opacity: 1;top: 50%;margin-top: -33px;}
+.flex-direction-nav .flex-prev {background: url('../img/prev.png') center center no-repeat;left: 8.57%;}
+.flex-direction-nav .flex-next {background: url('../img/next.png') center center no-repeat;right: 8.57%;}
+/* End Slider
+--------------------------------------------------------------------------------------------------*/
+
+/* =Main
+--------------------------------------------------------------------------------------------------*/
+.main {margin-top: 43px;width: 783px;float: left;}
+h2 {color: #635f57;font-size: 24px;text-transform: uppercase;margin-bottom: 22px;}
+.product-list {margin-bottom: 27px;}
+.product-box {margin-right: 28px;float: left;height: 318px;background: #fff;box-shadow: 0 0 5px #eaeaea;padding: 8px;margin-bottom: 26px;position: relative;}
+	.product-meta {margin-top: 6px;}
+		.product-title {color: #464148;line-height: 22px;display: block;}
+		.product-current-price {font-size: 18px;color: #7db122;line-height: 22px;}
+		.add-to-cart {display: block;height: 47px;width: 47px;background: url('../img/basket.png') center center no-repeat;}
+.new-product-ribbon {background: url('../img/blue-ribbon.png') 0 0 no-repeat;display: block;width: 97px;height: 94px;position: absolute;top: -4px;right: -3px;}
+.sale-product-ribbon {background: url('../img/green-ribbon.png') 0 0 no-repeat;display: block;width: 96px;height: 93px;position: absolute;top: -4px;left: -3px;}
+
+.aside {float: right;margin-top: 47px;}
+	.widget {background: #fff;box-shadow: 0 0 5px #eaeaea;border-top: 4px solid #4cb1ca;margin-bottom: 32px;padding-top: 20px;}
+		h3 {text-transform: uppercase;font-size: 24px;color: #635f57;text-align: center;line-height: 28px;}
+		.featured-btn {display: block;width: 132px;height: 44px;position: absolute;bottom: 17px;left: 38px;text-align: center;color: #fff;background: #4cb1ca;line-height: 44px;}
+.featured-flexslider {margin-top: 7px;}
+.featured-flexslider .flex-viewport {width: 208px;margin: 0 auto;}
+.flex-control-nav {position: static;box-shadow: inset 0 2px 5px #eaeaea;margin-top: 10px;padding-top: 15px;padding-bottom: 10px;}
+.flex-control-paging li a {width: 11px;height: 11px;background: #7db122;}
+.flex-control-paging li a.flex-active { background: #4cb1ca; cursor: default; }	
+/* End Main
+--------------------------------------------------------------------------------------------------*/
+
+/* =Subscribe form
+--------------------------------------------------------------------------------------------------*/
+.subscribe-form {padding: 16px;color: #696969;}
+	.subscribe-form p {text-align: center;line-height: 19px;margin-bottom: 10px;}
+	.email-field {display: block;width: 185px;height: 29px;margin: 15px auto 0 auto;border: 1px solid #c6c6c6;}
+	.subscribe-submit-btn {display: block;width: 112px;height: 44px;cursor: pointer;text-align: center;padding: 0;line-height: 44px;background: #7eb123;color: #fff;margin: 18px auto 15px auto;border: none;}
+	.subscribe-form hr {border: none;background: #ededed;padding: 0;height: 1px;}
+/* End Subscribe form
+--------------------------------------------------------------------------------------------------*/
+
+/* =Footer
+--------------------------------------------------------------------------------------------------*/
+.footer {margin-top: 34px;}
+.footer-meta {background: #4cb1ca;color: #fff;text-transform: uppercase;font-size: 21px;height: 106px;padding-top: 20px;}
+	.shipping-label, .call-label {display: block;padding-left: 86px;height: 65px;line-height: 65px;}
+	.shipping-label {background: url('../img/truck.png') 0 0 no-repeat;}
+	.call-label {background: url('../img/headphone.png') 0 0 no-repeat;}
+
+.footer-content {background: #39a0b9;padding-top: 45px;color: #fff;font-size: 13px;padding-bottom: 38px;}
+	.footer-content .col {margin-right: 28px;float: left;}
+	.footer-content .col:last-child {margin-right: 0;}
+		.footer-content h4 {text-transform: uppercase;color: #f5f5f5;font-size: 20px;margin-bottom: 28px;}
+		.tweets {display: block;background: url('../img/tweet.png') 0 0 no-repeat;padding-left: 52px;line-height: 19px;margin-bottom: 26px;margin-left: 16px;}
+			.tweets a {color: #9ae2f4;}
+		.gt-list {display: block;background: url('../img/gt.png') 0 center no-repeat;padding-left: 18px;line-height: 24px;height: 24px;}
+		.contacts p, .contacts a {display:block;line-height: 24px;height: 24px;}
+		.social {border-top: 1px solid #4cb1ca;padding-top: 18px;margin-top: 12px;width: 200px;}
+		.social li {float: left;margin-right: 10px;}
+			.social a {display: block;width: 36px;height: 36px;}
+			.gplus {background: url('../img/gplus.png') 0 0 no-repeat;}
+			.linkedin {background: url('../img/linkedin.png') 0 0 no-repeat;}
+			.rss {background: url('../img/rss.png') 0 0 no-repeat;}
+			.fb {background: url('../img/fb.png') 0 0 no-repeat;}
+			.fb-social {border-top: 1px solid #4cb1ca;border-bottom: 1px solid #4cb1ca;padding-top: 7px;margin-top: 3px;margin-bottom: 9px;}
+				.fb-social img {float: left;margin-right: 10px;margin-bottom: 8px;}
+				.fb-social img:nth-child(4n) {margin-right: 0;}
+			
+.footer-content .facebook h4 {margin-bottom: 22px;}
+.footer-copy {height: 61px;background: #0b4b5a;font-size: 13px;color: #8adcf0;padding-top: 24px;}
+	.footer-nav li {float: left;border-right: 1px solid #8adcf0;padding: 0 16px;}
+	.footer-nav li:last-child {padding-right: 0;border: none;}
+		.footer-nav a {display: block;height: 13px;line-height: 13px;}
+/* End Footer
+--------------------------------------------------------------------------------------------------*/
